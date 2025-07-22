@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cheffly (zabezpieczone)</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      padding: 80px;
+      background: #fffaf4;
+    }
+    h1 {
+      font-size: 36px;
+      color: #333;
+    }
+    a.button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 14px 28px;
+      background: black;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+  </style>
+  <script>
+    const haslo = "dominik2"; // 🔑 Zmień na własne hasło
+    const wejdz = prompt("Podaj hasło dostępu:");
+    if (wejdz !== haslo) {
+      document.write("⛔️ Dostęp zabroniony");
+      throw new Error("Błędne hasło");
+    }
+  </script>
+</head>
+<body>
+  <h1>Zamów kucharza, kelnera lub barmana – kiedy chcesz, gdzie chcesz</h1>
+  <a class="button" href="#">Zamów teraz</a>
+</body>
+</html>
